@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Noto sans', sans-serif;
+}
+body {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.Background-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 70vw;
+    background-image:
+    url("Imagenes/fondo_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-right: 3px #6A9C89 solid;
+}
+
+.Aside .container {
+    background-color: #ffff;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    /* margin-left: 20px; */
+}
+
+.Logo {
+    height: 3rem;
+    width: 15rem;
+    margin-right: 15px;
+    background-image:
+    url("Imagenes/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Aside .container .is {
+    font-size: 23px;
+
+}
+.Aside .formulario-is .formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.Aside .formulario-is input{
+    margin: 10px 0px;
+}
+
+.Aside .formulario-is .text-1{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom:10px;
+}
+
+.Aside .formulario-is .text-2{
+    font-size: 12px;
+}
+.Aside .formulario-is .text-2 a:hover{
+    color: #a1a0a0;
+}
+
+.Aside .formulario-is .ingresar{
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    width: auto;
+    background-color: #6A9C89;
+    color: #ffff;
+}
+.Aside .formulario-is .ingresar:hover{
+    border-radius: 5px;
+    border: 1px solid #6A9C89;
+    padding: 5px 10px;
+    width: auto;
+    background-color: #fff;
+    color: #6A9C89;
+}
+.Aside .formulario-is input{
+    border: 2px solid #a1a0a0;
+    border-radius: 7px;
+    width: 280px;
+    padding: 7px 10px;
+}
+ 
+ .Aside .formulario-is .text-field:focus-visible{
+    border: 2px solid #6A9C89 !important;
+    outline: none;
+ }
+ .Aside .formulario-is .text-psswd:focus-visible{
+    border: 2px solid #6A9C89 !important;
+    outline: none;
+ }
+
+.Aside .formulario-is .olvide {
+    font-size: 10px;
+    font-style: italic;
+    margin-left: 160px;
+    color: #6A9C89;
+}
+.Aside .formulario-is .olvide:hover{
+    color: #a1a0a0;
+}
+
+.Aside .formulario-is .text-2 a{
+    color: #6A9C89;
+}
+.Aside .formulario-is .text-3 {
+    margin: 0.5px 0px;
+}
+.Aside .formulario-is .text-3 a {
+    text-decoration: none;
+    color: #6A9C89;
+    font-size: 0.85em;
+    margin-top: 0px;
+}
+
+.Aside .formulario-is .text-3 a:hover {
+    color: #a1a0a0;
+}
+
+.Aside .formulario-bt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    padding: 0px 25px;
+}
+.Aside .botones input{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #a1a0a0;
+    padding: 15px 60px;
+}
+.Aside .botones .bt-g{
+    height: 30px;
+    width: 100px;
+    background-image:
+    url("Imagenes/google.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;   
+}
+.Aside .botones .bt-g:hover{
+    border: 2px solid #6A9C89;
+}
+
+.Aside .botones .bt-fb{
+    height: 30px;
+    width: 100px;
+    background-image:
+    url("Imagenes/facebook.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;   
+}
+.Aside .botones .bt-fb:hover{
+    border: 2px solid #6A9C89;
+}
+
+.Aside .botones p{
+    margin: 0px 20px;
+}
+
+@media (max-width: 980px) {
+
+    .container {
+        flex-direction: column-reverse;
+    }
+    
+    .Aside .formulario-is #show-password{
+        position : absolute;
+        transform: translatex(70px) translateY(-35px);
+    }
+}
