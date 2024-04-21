@@ -4,18 +4,25 @@
     font-family: 'Noto sans' sans-serif;
 }
 
-.header-lp{
+.navbar-lp{
     background-color: azure;
+}
+.btn-tg{
+    background-color: white;
+}
+.btn-tg:focus{
+    box-shadow: none;
 }
 .logo-img{
     width: 2rem;
 }
-.body-lp{
-    background-color: beige;
+.menu .nav-item{
+    margin-left: 20px;
+}
+
+.text-container{
+    flex-direction: column;
 }
 .footer-lp {
-    background-color: aquamarine;
-}
-.btn-tg{
-    background-color: aqua;
+    background-color: azure;
 }
