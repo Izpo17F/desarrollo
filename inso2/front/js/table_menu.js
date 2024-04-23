@@ -22,7 +22,14 @@ const listMenu = async () => {
                   <td>${menu.name}</td>
                   <td>${menu.price}</td>
                   <td>${menu.quantity}</td>
-                  <td><button class="btn"></button></td>
+                  <td>
+                  <button class="btn boton-opcion btn-danger" value="Eliminar">
+                  
+                  </button>
+                  <button class="btn boton-opcion btn-secondary" value="Editar">
+                  
+                  </button>
+                  </td>
             </tr>`;
 
         });
