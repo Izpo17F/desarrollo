@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Hamburguesa",
+    "price": 10.99,
+    "quantity": 1
+  },
+  {
+    "name": "Pizza",
+    "price": 12.50,
+    "quantity": 1
+  },
+  {
+    "name": "Ensalada",
+    "price": 8.99,
+    "quantity": 1
+  }
+]
