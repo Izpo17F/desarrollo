@@ -5,10 +5,13 @@
 }
 
 .navbar-lp{
-    background-color: azure;
+    background-color: #9FdAff;
+    /* height: 5rem; */
+    box-shadow: 0px 0px 5px 0px;
 }
 .btn-tg{
-    background-color: white;
+    background-color: #9FdAff;
+
 }
 .btn-tg:focus{
     box-shadow: none;
