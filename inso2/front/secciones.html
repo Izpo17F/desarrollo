@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.dataTables.css" />
 
-    <title>La Strada | Menu</title>
+    <title>La Strada | Secciones</title>
 </head>
 <body>
     <!-- nav -->
@@ -47,17 +47,17 @@
 <div class="container my-4 d-flex flex-column align-items-center">
     <div class="title text-center mb-3">
         <h2>
-            Menú
+            Secciones
         </h2>
     </div>
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <table class="table table-striped" id="datatable_menus">
+            <table class="table table-striped" id="datatable_seccion">
                 <thead>
-                    <tr class="t-menu">
+                    <tr class="t-seccion">
                         <th>Nombre</th>
-                        <th>Precio</th>
-                        <th>Cantidad</th>
+                        <th>Capacidad</th>
+                        <th>En uso</th>
                         <th>Opciones</th>
                     </tr>
                 </thead>
@@ -65,99 +65,58 @@
             </table>
         </div>
     </div>
-    <div class="boton-agregar">
-      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#crearMenu">+</button>
-    </div>
 </div>
+
  <!-- Modal -->
- <div class="modal fade " id="editarMenu" aria-hidden="false">
+ <div class="modal fade editarSeccion" id="editarSeccion" aria-hidden="false">
     <div class="modal-dialog">
       <div class="modal-content ">
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Editar Plato</h4>
+          <h4 class="modal-title">Editar Seccion</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-<!-- Modal Body -->
+
+        <!-- Modal Body -->
         <div class="container modal-body ">
-          <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="inputNombre">
-                <div id="texthelp" class="form-text">Ingrese un nombre</div>
-              </div>
-              
-              <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Precio</label>
-                  <input type="text" class="form-control" id="inputCapacidad">
-                  <div id="texthelp" class="form-text">Ingrese el precio del plato</div>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="inputNombre">
+                  <div id="texthelp" class="form-text">Ingrese un nombre</div>
                 </div>
                 
-              <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Cantidad</label>
-                  <input type="text" class="form-control" id="inputEnuso">
-                  <div id="texthelp" class="form-text">Ingrese cuantos platos estan disponibles</div>
-                </div>
-            </form>
-      </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Capacidad</label>
+                    <input type="text" class="form-control" id="inputCapacidad">
+                    <div id="texthelp" class="form-text">Ingrese la capacidad</div>
+                  </div>
+                  
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">En uso</label>
+                    <input type="text" class="form-control" id="inputEnuso">
+                    <div id="texthelp" class="form-text">Ingrese cuantos estan en uso</div>
+                  </div>
+              </form>
+        </div>
 
         <!-- Modal Footer -->
-        <div class="modal-footer">
+        <div class="modal-footer justify-content-center">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cambiar</button>
         </div>
 
       </div>
     </div>
-  </div> 
-   <!-- Modal Crear-->
- <div class="modal fade " id="crearMenu" aria-hidden="false">
-  <div class="modal-dialog">
-    <div class="modal-content ">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Editar Plato</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-<!-- Modal Body -->
-      <div class="container modal-body ">
-        <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputNombre">
-              <div id="texthelp" class="form-text">Ingrese un nombre</div>
-            </div>
-            
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Precio</label>
-                <input type="text" class="form-control" id="inputCapacidad">
-                <div id="texthelp" class="form-text">Ingrese el precio del plato</div>
-              </div>
-              
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Cantidad</label>
-                <input type="text" class="form-control" id="inputEnuso">
-                <div id="texthelp" class="form-text">Ingrese cuantos platos estan disponibles</div>
-              </div>
-          </form>
-    </div>
-
-      <!-- Modal Footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Cambiar</button>
-      </div>
-
-    </div>
   </div>
-</div> 
+  
 
   <!-- JS -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.datatables.net/2.0.5/js/dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/2.0.5/js/dataTables.bootstrap5.min.js"></script>
-  <script src="js/table_menu.js"></script>
+  <script src="js/table_secciones.js"></script>
   <script src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
 </body>
 </html>

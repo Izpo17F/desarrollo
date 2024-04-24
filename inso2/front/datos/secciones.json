@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Seccion 01",
+    "capacidad": 10,
+    "usado": 4
+  },
+  {
+    "nombre": "Seccion 02",
+    "capacidad": 10,
+    "usado": 10
+  },
+  {
+    "nombre": "Seccion 03",
+    "capacidad": 10,
+    "usado": 10
+  },
+  {
+    "nombre": "Bar",
+    "capacidad": 10,
+    "usado": 10
+  }
+]

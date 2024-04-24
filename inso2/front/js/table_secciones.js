@@ -8,37 +8,36 @@ const initdatatable = async () =>{
     }
 
     await listMenu();
-    datatable =$("#datatable_menus").DataTable({
+    datatable =$("#datatable_seccion").DataTable({
         searching: false, // Desactiva la función de búsqueda
         paging: false, // Desactiva la paginación
         ordering: false,
         info: false
     });
+        
     datatableInitialized = true;
 }
 const listMenu = async () => {
     try {
-        const response = await fetch("./datos/menu.json");
+        const response = await fetch("./datos/secciones.json");
         const menus = await response.json();
 
         let content = "";
 
-        menus.forEach((menu) => {
+        menus.forEach((seccion, index) => {
             content += 
             `<tr>
-                  <td>${menu.name}</td>
-                  <td>${menu.price}</td>
-                  <td>${menu.quantity}</td>
+                  <td>${seccion.nombre}</td>
+                  <td>${seccion.capacidad}</td>
+                  <td>${seccion.usado}</td>
                   <td>
                     <button class="btn btn-danger boton"></button>
-                    <button class="btn btn-primary botonEditar" data-bs-toggle="modal" data-bs-target="#editarMenu" ></button>
+                    <button class="btn btn-primary botonEditar" data-bs-toggle="modal" data-bs-target="#editarSeccion" ></button>
                   </td>
             </tr>`;
 
         });
-
         tableBody.innerHTML = content;
-    
 
     } catch(ex) {
         alert(ex);
@@ -46,5 +45,9 @@ const listMenu = async () => {
 };
 
 window.addEventListener("load", async () => {
-    await initdatatable();    
+    await initdatatable();
 });
+
+btnPrimary.addEventListener('click', function() {
+    myModal.show();
+  });
