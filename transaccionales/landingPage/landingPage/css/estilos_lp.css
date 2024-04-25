@@ -9,6 +9,9 @@
     /* height: 5rem; */
     box-shadow: 0px 0px 5px 0px;
 }
+.cotizador{
+    height: 90vh;
+}
 .btn-tg{
     background-color: #9FdAff;
 
