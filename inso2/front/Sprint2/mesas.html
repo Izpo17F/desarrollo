@@ -114,6 +114,43 @@
             </div>
         </div>
     </div>
+    <!-- Modales -->
+    <!-- Crear Mesa -->
+
+    <div class="modal fade" id="mdlAddMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Nueva Mesa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-12 mb-3">
+                      <label for="nombreMesa" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombreMesa">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                      <label for="seccionMesa" class="form-label">Seccion</label>
+                      <input type="text" class="form-control" id="seccionMesa" onkeydown="numero(event)">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                      <label for="estadoMesa" class="form-label">Estado</label>
+                      <select class="form-select" id="tipoEstado">
+                        <option value="" selected>Selecciona el Estado</option>
+                        <option value="1">Disponible</option>
+                        <option value="2">Inhabilitado</option>
+                        <!-- <option value="3"></option> -->
+                      </select>
+                  </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary js-guardarmenu">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -129,6 +166,6 @@
             loadDataUser();
         })
     </script> -->
-    
+
   </body>
 </html>
